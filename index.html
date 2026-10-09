@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+
+<head> 
+<title>
+	Kauppa
+</title>
+
+<style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Otsikko{font-size: 100px;
+text-align: center;
+color:rgb(255, 255, 255) ;
+background-color:rgb(240, 63, 87) ;
+position: relative;
+top: 50px;
+width: 500px;
+border-radius: 25px;
+margin: auto;	
+font-family: fantasy;
+border:#000000 solid 4px;
+}
+
+
+@keyframes varimuutos {
+  		0%   {border-color : #ff0000;}
+		20%  {border-color : #eaff00;}
+		40%  {border-color : #00ff1a;}
+		60%  {border-color : #00f7ff;}
+		80%  {border-color : #0004ff;}
+		100% {border-color : #ff00d9;}
+
+}
+
+.Linkit{color: #ff00d9;
+text-decoration: none;}
+
+
+
+
+
+
+
+#keskilaatikko{border: 10px solid ;
+				position:relative;
+				top: 150px;
+				height: 350px;
+				width: 300px;
+				left: 40%;
+				border-radius: 8%;
+				overflow: auto;
+				text-align: center;
+				font-size: 40px;
+				font-style: italic;
+				font-family: 'Gill Sans';	
+				animation-name: varimuutos;
+				animation-iteration-count: infinite;
+				animation-duration: 2s;
+				color: #000000;
+				background-color: azure;
+				
+}
+	.Napit {
+  border: none;
+  background-color:#0a0a23;
+  width: 100px;
+  color:aliceblue;
+  border-radius: 10px;
+	cursor: pointer;
+}
+
+
+	
+
+
+	
+</style>
+<script>
+
+function VaihdaTumma(){
+	document.body.style.backgroundColor = '#222222';
+}
+
+
+
+
+
+
+</script>
+
+
+
+
+
+<body bgcolor="white"
+<link rel="icon"href="kauppa.png" />
+</head>
+
+
+
+<body>
+<div id="Nappi">
+	<button  class="Napit"  onclick="VaihdaTumma();">
+
+		Tumma
+		<br>
+		Teema
+
+	</button>
+
+	
+
+</div>
+
+
+	<div id="Otsikko">
+		TavaraTori
+	</div>
+
+
+	
+
+
+
+	<div id="keskilaatikko">
+		<img src="lol.gif">
+		<a href="https://www.youtube.com">Youtube</a>
+		<br>
+		<a	class="Linkit" href="youtube.com">Youtube</a>
+</body>
+
+
+</html> 
