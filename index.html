@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nettikirppis - Etusivu</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #333;
+        }
+
+
+
+
+		.header-logo {
+    	width: 80px; /* Muuta kokoa tarvittaessa */
+   	 	height: auto;
+    	margin-bottom: 5px;
+		}	
+
+
+
+        /* Yläpalkki */
+        header {
+            background-color: #ffeb34; 
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* 6 tavaran ruudukko */
+        .tuote-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        /* Yksittäinen tuotekortti */
+        .tuote-kortti {
+            background: #171717;
+            border-radius: 8px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tuote-kortti:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        .tuote-kuva {
+            width: 100%;
+    		max-height: 500px;        /* Maksimikorkeus kuvalle */
+    		object-fit: contain;      /* TÄRKEIN MUUTOS: näyttää koko kuvan leikkaamatta */
+    		border-radius: 6px;
+    		margin-bottom: 20px;
+    		background-color: #f0f0f0;
+        }
+
+        .tuote-tiedot {
+            padding: 15px;
+        }
+
+        .tuote-hinta {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        .tuote-otsikko {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        .tuote-kuvaus {
+            font-size: 0.9rem;
+            color: #ffffff;
+            line-height: 1.4;
+        }
+
+        .sijainti {
+            margin-top: 12px;
+            font-size: 0.8rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+    <header>
+        <h1>TavaraTori</h1>
+		<img src="banana-png.png" alt="Logo" class="header-logo">
+        <p>Löydä vanhoille tavaroille uusi koti</p>
+    </header>
+
+    <div class="container">
+        <div class="tuote-grid">
+
+            <!-- TAVARA 1 -->
+            <a href="tuote1.html" class="tuote-kortti">
+                <!-- Vaihda src="" kohtaan oman kuvasi nimi, esim. "pyora.jpg" -->
+                <img src="keltainen_jopo.jpg" alt="Tuote 1" class="tuote-kuva">
+                <div class="tuote-tiedot">
+                    <div class="tuote-hinta">150 €</div>
+                    <div class="tuote-otsikko">Jopo polkupyörä</div>
+                    <p class="tuote-kuvaus">Hyväkuntoinen keltainen Jopo. Juuri huollettu ja valmiina ajoon.</p>
+                    <div class="sijainti">📍 Helsinki, Aurinkolahti • Tänään 12:30</div>
+                </div>
+            </a>
+
+            <!-- TAVARA 2 -->
+            <a href="tuote2.html" class="tuote-kortti">
+                <img src="moccamaster.webp		" alt="Tuote 2" class="tuote-kuva">
+                <div class="tuote-tiedot">
+                    <div class="tuote-hinta">45 €</div>
+                    <div class="tuote-otsikko">Kahvinkeitin Moccamaster</div>
+                    <p class="tuote-kuvaus">Toimiva keitin uuteen kotiin. Lasikannu ehjä ja siisti.</p>
+                    <div class="sijainti">📍 Espoo, Leppävaara • Tänään 10:15</div>
+                </div>
+            </a>
+
+            <!-- TAVARA 3 -->
+            <a href="tuote3.html" class="tuote-kortti">
+                <img src="https://via.placeholder.com/400x300?text=Kuva+3" alt="Tuote 3" class="tuote-kuva">
+                <div class="tuote-tiedot">
+                    <div class="tuote-hinta">320 €</div>
+                    <div class="tuote-otsikko">PlayStation 5 -konsoli</div>
+                    <p class="tuote-kuvaus">Mukaan kaksi ohjainta ja johdot. Kuitti tallessa.</p>
+                    <div class="sijainti">📍 Tampere • Eilen</div>
+                </div>
+            </a>
+
+            <!-- TAVARA 4 -->
+            <a href="tuote4.html" class="tuote-kortti">
+                <img src="https://via.placeholder.com/400x300?text=Kuva+4" alt="Tuote 4" class="tuote-kuva">
+                <div class="tuote-tiedot">
+                    <div class="tuote-hinta">80 €</div>
+                    <div class="tuote-otsikko">Massiivipuinen ruokapöytä</div>
+                    <p class="tuote-kuvaus">Tukeva pöytä neljälle hengelle. Pientä käytön jälkeä pinnassa.</p>
+                    <div class="sijainti">📍 Turku • Eilen</div>
+                </div>
+            </a>
+
+            <!-- TAVARA 5 -->
+            <a href="tuote5.html" class="tuote-kortti">
+                <img src="https://via.placeholder.com/400x300?text=Kuva+5" alt="Tuote 5" class="tuote-kuva">
+                <div class="tuote-tiedot">
+                    <div class="tuote-hinta">25 €</div>
+                    <div class="tuote-otsikko">Talvitakki (Koko M)</div>
+                    <p class="tuote-kuvaus">Lämmin untuvatakki, käytetty vain muutaman kerran viime talvena.</p>
+                    <div class="sijainti">📍 Oulu • 2 pv sitten</div>
+                </div>
+            </a>
+
+            <!-- TAVARA 6 -->
+            <a href="tuote6.html" class="tuote-kortti">
+                <img src="https://via.placeholder.com/400x300?text=Kuva+6" alt="Tuote 6" class="tuote-kuva">
+                <div class="tuote-tiedot">
+                    <div class="tuote-hinta">15 €</div>
+                    <div class="tuote-otsikko">Lautapelipaketti</div>
+                    <p class="tuote-kuvaus">Kolme lautapeliä yhteishintaan. Kaikki nappulat tallessa.</p>
+                    <div class="sijainti">📍 Vantaa • 3 pv sitten</div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>

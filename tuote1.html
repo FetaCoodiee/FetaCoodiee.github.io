@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilmoitus - Oma Tori</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f5f7;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff5a5f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .takaisin-nappi {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: 600;
+        }
+
+        .takaisin-nappi:hover {
+            text-decoration: underline;
+        }
+
+        .ilmoitus-laatikko {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            padding: 25px;
+        }
+
+        .iso-kuva {
+        width: 100%;
+        max-height: 500px;        /* Maksimikorkeus kuvalle */
+        object-fit: contain;      /* TÄRKEIN MUUTOS: näyttää koko kuvan leikkaamatta */
+        border-radius: 6px;
+        margin-bottom: 20px;
+        background-color: #f0f0f0; /* Siisti vaaleanharmaa tausta pystykuvan sivuille */
+}
+
+        .hinta {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #222;
+            margin: 10px 0;
+        }
+
+        .sijainti {
+            color: #777;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .kuvaus-otsikko {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .pitka-kuvaus {
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 30px;
+        }
+
+        .myyja-tiedot {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #e5e5e5;
+        }
+
+        .ota-yhteytta-nappi {
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #0066cc;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .ota-yhteytta-nappi:hover {
+            background-color: #0052a3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Oma Tori</h1>
+    </header>
+
+    <div class="container">
+        <!-- Linkki takaisin etusivulle -->
+        <a href="index.html" class="takaisin-nappi">← Takaisin etusivulle</a>
+
+        <div class="ilmoitus-laatikko">
+            <!-- Vaihda tähän sama kuva tai isompi kuva tavarasta -->
+            <img src="keltainen_jopo.jpg" alt="Tuotekuva" class="iso-kuva">
+
+            <h1>Jopo polkupyörä</h1>
+            <div class="hinta">150 €</div>
+            <div class="sijainti">📍 Sijainti: Helsinki • Ilmoitus jätetty: Tänään 12:30</div>
+
+            <h2 class="kuvaus-otsikko">Lisätiedot</h2>
+            <p class="pitka-kuvaus">
+                Myydään hyväkuntoinen keltainen Jopo polkupyörä. Pyörää on säilytetty lämpimässä varastossa ja se on juuri huollettu. Runkolukko toimii ja mukaan tulee kaksi avainta. Nouto paikan päältä, maksu MobilePaylla tai käteisellä.
+            </p>
+
+            <div class="myyja-tiedot">
+                <h3>Myyjä: Matti Meikäläinen</h3>
+                <p>Puhelin: 040 123 4567</p>
+                <a href="mailto:esimerkki@sahkoposti.fi" class="ota-yhteytta-nappi">Lähetä viesti</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
